@@ -1,0 +1,41 @@
+standard
+***Report Model: uart_top***
+
+IO Statistics
+#IO                     9
+  #input                5
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                  569   out of  19600    2.90%
+#reg                  645   out of  19600    3.29%
+#le                  1035
+  #lut only           390   out of   1035   37.68%
+  #reg only           466   out of   1035   45.02%
+  #lut&reg            179   out of   1035   17.29%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    9   out of    188    4.79%
+  #ireg                 0
+  #oreg                 4
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+
+Detailed IO Report
+
+Name            Direction     Location     IOStandard     DriveStrength     PackReg                  
+ext_clk_25m     INPUT         K14          LVCMOS33       N/A               NONE                     
+ext_rst         INPUT         H14          LVCMOS33       N/A               NONE                     
+ext_rst_n       INPUT         L12          LVCMOS33       N/A               NONE                     
+uart_rx         INPUT         B15          LVCMOS25       N/A               NONE                     
+uart_rx_2       INPUT         C8           LVCMOS25       N/A               NONE                     
+led_b           OUTPUT        N16          LVCMOS33       8                 OREG                     
+led_g           OUTPUT        P16          LVCMOS33       8                 OREG                     
+led_r           OUTPUT        P15          LVCMOS33       8                 OREG                     
+uart_tx         OUTPUT        E16          LVCMOS25       8                 OREG                     
+

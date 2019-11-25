@@ -1,0 +1,860 @@
+============================================================
+   Tang Dynasty, V4.6.14314
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.6.2/bin/td.exe
+   Built at =   11:20:06 Sep 19 2019
+   Run by =     ¿µ×Ó½¡
+   Run Date =   Sat Nov 23 18:12:24 2019
+
+   Run on =     DESKTOP-02647D1
+============================================================
+RUN-001 : GUI based run...
+============================================================
+   Tang Dynasty, V4.6.14314
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.6.2/bin/td.exe
+   Built at =   11:20:06 Sep 19 2019
+   Run by =     ¿µ×Ó½¡
+   Run Date =   Sat Nov 23 18:12:24 2019
+
+   Run on =     DESKTOP-02647D1
+============================================================
+RUN-1002 : start command "open_project uart.al"
+GUI-8003 ERROR: source/my_uart_rx.v is missing!
+GUI-8003 ERROR: source/my_uart_tx.v is missing!
+GUI-8003 ERROR: source/speed_setting.v is missing!
+GUI-8003 ERROR: source/uart_top.v is missing!
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+GUI-8003 ERROR: source/my_uart_rx.v is missing!
+GUI-8003 ERROR: source/my_uart_tx.v is missing!
+GUI-8003 ERROR: source/speed_setting.v is missing!
+GUI-8003 ERROR: source/uart_top.v is missing!
+GUI-6001 WARNING: File source/my_uart_tx.v does not exist!
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-5007 WARNING: instantiate unknown module my_uart_rx_2 in source/rtl/uart_top.v(101)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-5007 WARNING: instantiate unknown module speed_setting_2 in source/rtl/uart_top.v(148)
+HDL-5007 WARNING: instantiate unknown module rgb_tx in source/rtl/uart_top.v(164)
+HDL-8007 ERROR: my_uart_rx_2 is a black box
+HDL-8007 ERROR: speed_setting_2(BPS_SET=1152,CLK_PERIORD=40) is a black box
+HDL-8007 ERROR: rgb_tx is a black box
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-5007 WARNING: instantiate unknown module my_uart_rx_2 in source/rtl/uart_top.v(101)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-5007 WARNING: instantiate unknown module speed_setting_2 in source/rtl/uart_top.v(148)
+HDL-5007 WARNING: instantiate unknown module rgb_tx in source/rtl/uart_top.v(164)
+HDL-8007 ERROR: my_uart_rx_2 is a black box
+HDL-8007 ERROR: speed_setting_2(BPS_SET=1152,CLK_PERIORD=40) is a black box
+HDL-8007 ERROR: rgb_tx is a black box
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-5007 WARNING: instantiate unknown module my_uart_rx_2 in source/rtl/uart_top.v(101)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-5007 WARNING: instantiate unknown module speed_setting_2 in source/rtl/uart_top.v(148)
+HDL-5007 WARNING: instantiate unknown module rgb_tx in source/rtl/uart_top.v(164)
+HDL-8007 ERROR: my_uart_rx_2 is a black box
+HDL-8007 ERROR: speed_setting_2(BPS_SET=1152,CLK_PERIORD=40) is a black box
+HDL-8007 ERROR: rgb_tx is a black box
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-5007 WARNING: instantiate unknown module my_uart_rx_2 in source/rtl/uart_top.v(101)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-5007 WARNING: instantiate unknown module speed_setting_2 in source/rtl/uart_top.v(148)
+HDL-5007 WARNING: instantiate unknown module rgb_tx in source/rtl/uart_top.v(164)
+HDL-8007 ERROR: my_uart_rx_2 is a black box
+HDL-8007 ERROR: speed_setting_2(BPS_SET=1152,CLK_PERIORD=40) is a black box
+HDL-8007 ERROR: rgb_tx is a black box
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-5007 WARNING: instantiate unknown module my_uart_rx_2 in source/rtl/uart_top.v(101)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-5007 WARNING: instantiate unknown module speed_setting_2 in source/rtl/uart_top.v(148)
+HDL-5007 WARNING: instantiate unknown module rgb_tx in source/rtl/uart_top.v(164)
+HDL-8007 ERROR: my_uart_rx_2 is a black box
+HDL-8007 ERROR: speed_setting_2(BPS_SET=1152,CLK_PERIORD=40) is a black box
+HDL-8007 ERROR: rgb_tx is a black box
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-5007 WARNING: instantiate unknown module my_uart_rx_2 in source/rtl/uart_top.v(101)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-5007 WARNING: instantiate unknown module speed_setting_2 in source/rtl/uart_top.v(148)
+HDL-5007 WARNING: instantiate unknown module rgb_tx in source/rtl/uart_top.v(164)
+HDL-8007 ERROR: my_uart_rx_2 is a black box
+HDL-8007 ERROR: speed_setting_2(BPS_SET=1152,CLK_PERIORD=40) is a black box
+HDL-8007 ERROR: rgb_tx is a black box
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-5007 WARNING: instantiate unknown module my_uart_rx_2 in source/rtl/uart_top.v(101)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-5007 WARNING: instantiate unknown module speed_setting_2 in source/rtl/uart_top.v(148)
+HDL-5007 WARNING: instantiate unknown module rgb_tx in source/rtl/uart_top.v(164)
+HDL-8007 ERROR: my_uart_rx_2 is a black box
+HDL-8007 ERROR: speed_setting_2(BPS_SET=1152,CLK_PERIORD=40) is a black box
+HDL-8007 ERROR: rgb_tx is a black box
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-5007 WARNING: instantiate unknown module my_uart_rx_2 in source/rtl/uart_top.v(101)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-5007 WARNING: instantiate unknown module speed_setting_2 in source/rtl/uart_top.v(148)
+HDL-5007 WARNING: instantiate unknown module rgb_tx in source/rtl/uart_top.v(164)
+HDL-8007 ERROR: my_uart_rx_2 is a black box
+HDL-8007 ERROR: speed_setting_2(BPS_SET=1152,CLK_PERIORD=40) is a black box
+HDL-8007 ERROR: rgb_tx is a black box
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-5007 WARNING: instantiate unknown module my_uart_rx_2 in source/rtl/uart_top.v(101)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-5007 WARNING: instantiate unknown module speed_setting_2 in source/rtl/uart_top.v(148)
+HDL-5007 WARNING: instantiate unknown module rgb_tx in source/rtl/uart_top.v(164)
+HDL-8007 ERROR: my_uart_rx_2 is a black box
+HDL-8007 ERROR: speed_setting_2(BPS_SET=1152,CLK_PERIORD=40) is a black box
+HDL-8007 ERROR: rgb_tx is a black box
+GUI-8003 ERROR: source/my_uart_rx.v is missing!
+GUI-8003 ERROR: source/my_uart_tx.v is missing!
+GUI-8003 ERROR: source/speed_setting.v is missing!
+GUI-8003 ERROR: source/uart_top.v is missing!
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx_2.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx_2.v(45)
+HDL-1007 : analyze verilog file source/rtl/speed_setting_2.v
+HDL-1007 : analyze verilog file source/rtl/rgb_tx.v
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(60)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx_2.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx_2.v(45)
+HDL-1007 : analyze verilog file source/rtl/speed_setting_2.v
+HDL-1007 : analyze verilog file source/rtl/rgb_tx.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-1007 : elaborate module my_uart_rx_2 in source/rtl/my_uart_rx_2.v(1)
+HDL-1007 : elaborate module speed_setting(BPS_SET=1152) in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 8 for port 'rx_data' in source/rtl/uart_top.v(130)
+HDL-1007 : elaborate module speed_setting_2 in source/rtl/speed_setting_2.v(1)
+HDL-1007 : elaborate module rgb_tx in source/rtl/rgb_tx.v(1)
+HDL-1200 : Current top model is uart_top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc source/sdc/mini_EG4S20BG256.adc"
+RUN-1002 : start command "set_pin_assignment ext_clk_25m  LOCATION = K14;  "
+RUN-1002 : start command "set_pin_assignment ext_rst_n  LOCATION = L12;  "
+RUN-1002 : start command "set_pin_assignment ext_rst  LOCATION = H14;  "
+RUN-1002 : start command "set_pin_assignment uart_rx  LOCATION = B15; "
+RUN-1002 : start command "set_pin_assignment uart_rx_2  LOCATION = C8; "
+RUN-1002 : start command "set_pin_assignment uart_tx  LOCATION = E16; "
+RUN-1002 : start command "set_pin_assignment led_b  LOCATION = N16; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment led_g  LOCATION = P16; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment led_r  LOCATION = P15; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/TD4.6.2/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "uart_top"
+SYN-1012 : SanityCheck: Model "my_uart_rx"
+SYN-1012 : SanityCheck: Model "my_uart_rx_2"
+SYN-1012 : SanityCheck: Model "my_uart_tx"
+SYN-1012 : SanityCheck: Model "rgb_tx"
+SYN-1012 : SanityCheck: Model "speed_setting"
+SYN-1012 : SanityCheck: Model "speed_setting_2"
+SYN-1012 : SanityCheck: Model "speed_setting(BPS_SET=1152)"
+SYN-1012 : SanityCheck: Model "pll_test"
+SYN-1043 : Mark pll_test as IO macro for instance bufg_feedback
+SYN-1043 : Mark my_uart_tx as IO macro for instance u10
+SYN-1043 : Mark my_uart_rx_2 as IO macro for instance u15
+SYN-1043 : Mark my_uart_rx as IO macro for instance u13
+SYN-1011 : Flatten model uart_top
+SYN-1011 : Flatten model my_uart_rx
+SYN-1011 : Flatten model my_uart_rx_2
+SYN-1011 : Flatten model my_uart_tx
+SYN-1011 : Flatten model rgb_tx
+SYN-1011 : Flatten model speed_setting
+SYN-1011 : Flatten model speed_setting_2
+SYN-1011 : Flatten model speed_setting(BPS_SET=1152)
+SYN-1011 : Flatten model pll_test
+SYN-1016 : Merged 19 instances.
+SYN-1014 : Optimize round 1
+SYN-1032 : 3494/2 useful/useless nets, 3170/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1021 : Optimized 387 onehot mux instances.
+SYN-1020 : Optimized 1674 distributor mux.
+SYN-1016 : Merged 2355 instances.
+SYN-1015 : Optimize round 1, 5015 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 1 inv instances.
+SYN-1032 : 1233/627 useful/useless nets, 909/1701 useful/useless insts
+SYN-1017 : Remove 1 const input seq instances
+SYN-1002 :     my_uart_tx/reg0_b1
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 1725 better
+SYN-1014 : Optimize round 3
+SYN-1032 : 1232/0 useful/useless nets, 908/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 3, 0 better
+RUN-1002 : start command "report_area -file uart_rtl.area"
+RUN-1001 : standard
+***Report Model: uart_top***
+
+IO Statistics
+#IO                     9
+  #input                5
+  #output               4
+  #inout                0
+
+Gate Statistics
+#Basic gates          727
+  #and                 55
+  #nand                 0
+  #or                  10
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                 13
+  #bufif1               0
+  #MX21                 0
+  #FADD                 0
+  #DFF                649
+  #LATCH                0
+#MACRO_ADD             31
+#MACRO_EQ              34
+#MACRO_MUX            112
+
+RUN-1001 : 
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance |Module   |gates  |seq    |macros |
++-------------------------------------------+
+|top      |uart_top |78     |649    |66     |
++-------------------------------------------+
+
+RUN-1002 : start command "export_db uart_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea uart_gate.area"
+RUN-1001 : Open license file D:/TD4.6.2/license/Anlogic.lic
+SYN-2001 : Map 9 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 1251/0 useful/useless nets, 928/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 1490/0 useful/useless nets, 1167/0 useful/useless insts
+SYN-1016 : Merged 60 instances.
+SYN-2501 : Optimize round 1, 271 better
+SYN-2501 : Optimize round 2
+SYN-1032 : 1430/0 useful/useless nets, 1107/0 useful/useless insts
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 31 macro adder
+SYN-1032 : 1914/0 useful/useless nets, 1591/0 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=4, #lut = 183 (3.16), #lev = 3 (1.89)
+SYN-2551 : Post LUT mapping optimization.
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 431 instances into 186 LUTs, name keeping = 77%.
+SYN-3001 : Mapper removed 3 lut buffers
+SYN-1001 : Packing model "uart_top" ...
+SYN-4010 : Pack lib has 42 rtl pack models with 15 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 1641/0 useful/useless nets, 1318/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 645 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 14 carry chain into lslice
+SYN-4007 : Packing 238 adder to BLE ...
+SYN-4008 : Packed 238 adder and 7 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 183 LUT to BLE ...
+SYN-4008 : Packed 183 LUT and 109 SEQ to BLE.
+SYN-4003 : Packing 529 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (529 nodes)...
+SYN-4004 : #1: Packed 63 SEQ (1552 nodes)...
+SYN-4005 : Packed 63 SEQ with LUT/SLICE
+SYN-4006 : 41 single LUT's are left
+SYN-4006 : 466 single SEQ's are left
+SYN-4011 : Packing model "uart_top" (AL_USER_NORMAL) with 649/856 primitive instances ...
+RUN-1002 : start command "report_area -file uart_gate.area"
+RUN-1001 : standard
+***Report Model: uart_top***
+
+IO Statistics
+#IO                     9
+  #input                5
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                  569   out of  19600    2.90%
+#reg                  645   out of  19600    3.29%
+#le                  1035
+  #lut only           390   out of   1035   37.68%
+  #reg only           466   out of   1035   45.02%
+  #lut&reg            179   out of   1035   17.29%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    9   out of    188    4.79%
+  #ireg                 0
+  #oreg                 4
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++----------------------------------------+
+|Instance |Module   |le    |lut   |seq   |
++----------------------------------------+
+|top      |uart_top |1035  |569   |645   |
++----------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model uart_top
+RUN-1002 : start command "export_db uart_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file D:/TD4.6.2/license/Anlogic.lic
+PHY-3001 : Placer runs in 4 thread(s).
+SYN-4016 : Net clk_25m driven by BUFG (346 clock/control pins, 1 other pins).
+SYN-4019 : Net ext_clk_25m_pad is refclk of pll u_pll_test/pll_inst.
+SYN-4020 : Net ext_clk_25m_pad is fbclk of pll u_pll_test/pll_inst.
+SYN-4024 : Net "rx_data_3" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_25m as clock net
+SYN-4025 : Tag rtl::Net ext_clk_25m_pad as clock net
+SYN-4025 : Tag rtl::Net rx_data_3 as clock net
+SYN-4026 : Tagged 3 rtl::Net as clock net
+SYN-4015 : Create BUFG instance for clk Net rx_data_3 to drive 4 clock pins.
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 535 instances
+RUN-1001 : 260 mslices, 260 lslices, 9 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 1246 nets
+RUN-1001 : 775 nets have 2 pins
+RUN-1001 : 433 nets have [3 - 5] pins
+RUN-1001 : 14 nets have [6 - 10] pins
+RUN-1001 : 16 nets have [11 - 20] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+RUN-1001 : 2 nets have 100+ pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 533 instances, 520 slices, 31 macros(193 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model uart_top.
+TMR-2506 : Build timing graph completely. Port num: 9, tpin num: 3981, tnet num: 1244, tinst num: 533, tnode num: 5358, tedge num: 7328.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 29 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 1244 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 704 clock pins, and constraint 1377 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.143113s wall, 0.125000s user + 0.015625s system = 0.140625s CPU (98.3%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 345404
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 5%, beta_incr = 0.968163
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(1): len = 289781, overlap = 0
+PHY-3002 : Step(2): len = 251755, overlap = 0
+PHY-3002 : Step(3): len = 230001, overlap = 0
+PHY-3002 : Step(4): len = 215735, overlap = 0
+PHY-3002 : Step(5): len = 206704, overlap = 0
+PHY-3002 : Step(6): len = 198744, overlap = 0
+PHY-3002 : Step(7): len = 192010, overlap = 0
+PHY-3002 : Step(8): len = 184998, overlap = 0
+PHY-3002 : Step(9): len = 179061, overlap = 0
+PHY-3002 : Step(10): len = 172785, overlap = 0
+PHY-3002 : Step(11): len = 167236, overlap = 0
+PHY-3002 : Step(12): len = 161527, overlap = 0
+PHY-3002 : Step(13): len = 156314, overlap = 0
+PHY-3002 : Step(14): len = 151059, overlap = 0
+PHY-3002 : Step(15): len = 146064, overlap = 0
+PHY-3002 : Step(16): len = 140898, overlap = 0
+PHY-3002 : Step(17): len = 135809, overlap = 0
+PHY-3002 : Step(18): len = 130748, overlap = 0
+PHY-3002 : Step(19): len = 125650, overlap = 0
+PHY-3002 : Step(20): len = 121029, overlap = 0
+PHY-3002 : Step(21): len = 116730, overlap = 0
+PHY-3002 : Step(22): len = 112156, overlap = 0
+PHY-3002 : Step(23): len = 107098, overlap = 0
+PHY-3002 : Step(24): len = 103195, overlap = 0
+PHY-3002 : Step(25): len = 99469.3, overlap = 0
+PHY-3002 : Step(26): len = 95200.5, overlap = 0
+PHY-3002 : Step(27): len = 91197.6, overlap = 0
+PHY-3002 : Step(28): len = 87175.8, overlap = 0
+PHY-3002 : Step(29): len = 82752.3, overlap = 0
+PHY-3002 : Step(30): len = 78927.2, overlap = 0
+PHY-3002 : Step(31): len = 75616.8, overlap = 1.5
+PHY-3002 : Step(32): len = 71304.7, overlap = 2.5
+PHY-3002 : Step(33): len = 67314.6, overlap = 2.75
+PHY-3002 : Step(34): len = 64002.7, overlap = 2.5
+PHY-3002 : Step(35): len = 60869.1, overlap = 3
+PHY-3002 : Step(36): len = 57863.1, overlap = 3.75
+PHY-3002 : Step(37): len = 54386.1, overlap = 3
+PHY-3002 : Step(38): len = 49946.3, overlap = 2
+PHY-3002 : Step(39): len = 47284.9, overlap = 2
+PHY-3002 : Step(40): len = 45208.5, overlap = 3.75
+PHY-3002 : Step(41): len = 41410.4, overlap = 6
+PHY-3002 : Step(42): len = 37868.7, overlap = 7
+PHY-3002 : Step(43): len = 36261.1, overlap = 9
+PHY-3002 : Step(44): len = 33515.6, overlap = 11
+PHY-3002 : Step(45): len = 30222.7, overlap = 9.75
+PHY-3002 : Step(46): len = 28994.6, overlap = 8.5
+PHY-3002 : Step(47): len = 27520.8, overlap = 10
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 4.51933e-05
+PHY-3002 : Step(48): len = 26694.1, overlap = 10
+PHY-3002 : Step(49): len = 27993.9, overlap = 11.75
+PHY-3002 : Step(50): len = 27685.4, overlap = 10
+PHY-3002 : Step(51): len = 26791.8, overlap = 10
+PHY-3002 : Step(52): len = 25742.3, overlap = 10.5
+PHY-3002 : Step(53): len = 24181.7, overlap = 12.5
+PHY-3002 : Step(54): len = 23446.2, overlap = 14
+PHY-3002 : Step(55): len = 22491, overlap = 15.25
+PHY-3002 : Step(56): len = 21425.1, overlap = 14.75
+PHY-3002 : Step(57): len = 20366.3, overlap = 13.75
+PHY-3002 : Step(58): len = 20451.3, overlap = 13.25
+PHY-3002 : Step(59): len = 20247, overlap = 12.5
+PHY-3002 : Step(60): len = 18663.4, overlap = 12
+PHY-3002 : Step(61): len = 17791.8, overlap = 12
+PHY-3002 : Step(62): len = 17038.7, overlap = 13
+PHY-3002 : Step(63): len = 16096.4, overlap = 17.25
+PHY-3002 : Step(64): len = 15967.5, overlap = 17
+PHY-3002 : Step(65): len = 15700, overlap = 15
+PHY-3002 : Step(66): len = 15265.6, overlap = 11
+PHY-3002 : Step(67): len = 14817.1, overlap = 11.5
+PHY-3002 : Step(68): len = 14447.9, overlap = 12.25
+PHY-3002 : Step(69): len = 14316, overlap = 13.75
+PHY-3002 : Step(70): len = 14473.3, overlap = 13.5
+PHY-3002 : Step(71): len = 14270.7, overlap = 13.5
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 9.03866e-05
+PHY-3002 : Step(72): len = 13985.5, overlap = 13.75
+PHY-3002 : Step(73): len = 13534.8, overlap = 14.5
+PHY-3001 : :::3::: Try harder cell spreading with beta_ = 0.000180773
+PHY-3002 : Step(74): len = 13312.2, overlap = 14.5
+PHY-3002 : Step(75): len = 13334.4, overlap = 14.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.004528s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 4
+PHY-3001 : Cell area utilization is 6%, beta_incr = 0.968163
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 1.01985e-06
+PHY-3002 : Step(76): len = 13219.9, overlap = 30.75
+PHY-3002 : Step(77): len = 13219.9, overlap = 30.75
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 2.03969e-06
+PHY-3002 : Step(78): len = 13131.8, overlap = 30.75
+PHY-3002 : Step(79): len = 13131.8, overlap = 30.75
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 4.07939e-06
+PHY-3002 : Step(80): len = 13085.9, overlap = 30.75
+PHY-3002 : Step(81): len = 13085.9, overlap = 30.75
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 6%, beta_incr = 0.968163
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 3.68808e-06
+PHY-3002 : Step(82): len = 13078.6, overlap = 46.5
+PHY-3002 : Step(83): len = 13140.5, overlap = 46.75
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 7.37616e-06
+PHY-3002 : Step(84): len = 13024, overlap = 46.5
+PHY-3002 : Step(85): len = 13180.5, overlap = 47
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 9.92079e-06
+PHY-3002 : Step(86): len = 13068.5, overlap = 45.25
+PHY-3002 : Step(87): len = 13592, overlap = 46
+PHY-3001 : :::3::: Try harder cell spreading with beta_ = 1.39949e-05
+PHY-3002 : Step(88): len = 13291.2, overlap = 45.5
+PHY-3002 : Step(89): len = 15184.4, overlap = 41
+PHY-3002 : Step(90): len = 15780.3, overlap = 39
+PHY-3002 : Step(91): len = 15998.3, overlap = 38.5
+PHY-3002 : Step(92): len = 17303.4, overlap = 29.25
+PHY-3002 : Step(93): len = 18381.2, overlap = 26.25
+PHY-3002 : Step(94): len = 18426.7, overlap = 25
+PHY-3001 : :::4::: Try harder cell spreading with beta_ = 2.79899e-05
+PHY-3002 : Step(95): len = 18627.2, overlap = 24
+PHY-3002 : Step(96): len = 20260, overlap = 22.75
+PHY-3002 : Step(97): len = 20790.6, overlap = 22
+PHY-3002 : Step(98): len = 21538.5, overlap = 21
+PHY-3002 : Step(99): len = 21951.5, overlap = 19.25
+PHY-3002 : Step(100): len = 22216.6, overlap = 17.25
+PHY-3002 : Step(101): len = 22106.3, overlap = 16.25
+PHY-3002 : Step(102): len = 21957.8, overlap = 16.25
+PHY-3002 : Step(103): len = 21647.7, overlap = 16.5
+PHY-3002 : Step(104): len = 21357.9, overlap = 14.5
+PHY-3001 : :::5::: Try harder cell spreading with beta_ = 5.59798e-05
+PHY-3002 : Step(105): len = 21515.5, overlap = 14.5
+PHY-3002 : Step(106): len = 22229.2, overlap = 15
+PHY-3002 : Step(107): len = 22779.1, overlap = 14.75
+PHY-3002 : Step(108): len = 22680.8, overlap = 15
+PHY-3001 : :::6::: Try harder cell spreading with beta_ = 0.00011196
+PHY-3002 : Step(109): len = 23177.8, overlap = 14
+PHY-3002 : Step(110): len = 23877.1, overlap = 13.5
+PHY-3002 : Step(111): len = 23868.2, overlap = 13.75
+PHY-3002 : Step(112): len = 23958.6, overlap = 14
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.057197s wall, 0.046875s user + 0.078125s system = 0.125000s CPU (218.5%)
+
+PHY-3001 : Run with size of 2
+PHY-3001 : Cell area utilization is 6%, beta_incr = 0.968163
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0.000871307
+PHY-3002 : Step(113): len = 29366.1, overlap = 5
+PHY-3002 : Step(114): len = 28409.6, overlap = 5.5
+PHY-3002 : Step(115): len = 27142.1, overlap = 9.75
+PHY-3002 : Step(116): len = 26405.9, overlap = 16
+PHY-3002 : Step(117): len = 26111.6, overlap = 17.75
+PHY-3002 : Step(118): len = 25963.1, overlap = 17
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.00174261
+PHY-3002 : Step(119): len = 26161.9, overlap = 16.25
+PHY-3002 : Step(120): len = 26216.8, overlap = 16.5
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.00348523
+PHY-3002 : Step(121): len = 26217.6, overlap = 16
+PHY-3002 : Step(122): len = 26211.4, overlap = 15.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.008969s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (174.2%)
+
+PHY-3001 : Legalized: Len = 28916.1, Over = 0
+PHY-3001 : Spreading special nets. 1 overflows in 2952 tiles.
+PHY-3001 : 1 instances has been re-located, deltaX = 1, deltaY = 1.
+PHY-3001 : Final: Len = 28964.1, Over = 0
+PHY-3001 : Improving timing with driver duplication.
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 4 thread ...
+PHY-1002 : len = 43680, over cnt = 48(0%), over = 68, worst = 2
+PHY-1002 : len = 44304, over cnt = 21(0%), over = 27, worst = 2
+PHY-1002 : len = 44696, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.024963s wall, 0.062500s user + 0.000000s system = 0.062500s CPU (250.4%)
+
+RUN-1003 : finish command "place" in  2.606724s wall, 4.531250s user + 1.093750s system = 5.625000s CPU (215.8%)
+
+RUN-1004 : used memory is 211 MB, reserved memory is 168 MB, peak memory is 230 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file D:/TD4.6.2/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 176 to 126
+PHY-1001 : Pin misalignment score is improved from 126 to 126
+PHY-1001 : Route runs in 4 thread(s)
+RUN-1001 : There are total 535 instances
+RUN-1001 : 260 mslices, 260 lslices, 9 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 1246 nets
+RUN-1001 : 775 nets have 2 pins
+RUN-1001 : 433 nets have [3 - 5] pins
+RUN-1001 : 14 nets have [6 - 10] pins
+RUN-1001 : 16 nets have [11 - 20] pins
+RUN-1001 : 6 nets have [21 - 99] pins
+RUN-1001 : 2 nets have 100+ pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 4 thread ...
+PHY-1002 : len = 43680, over cnt = 48(0%), over = 68, worst = 2
+PHY-1002 : len = 44304, over cnt = 21(0%), over = 27, worst = 2
+PHY-1002 : len = 44696, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.027914s wall, 0.062500s user + 0.015625s system = 0.078125s CPU (279.9%)
+
+PHY-1001 : End global routing;  0.123995s wall, 0.156250s user + 0.015625s system = 0.171875s CPU (138.6%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : clock net clk_25m will be merged with clock u_pll_test/clk0_buf
+PHY-1001 : net ext_clk_25m_pad will be routed on clock mesh
+PHY-1001 : clock net rx_data_3_gclk_net will be merged with clock rx_data_3
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 26256, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.109066s wall, 0.125000s user + 0.000000s system = 0.125000s CPU (114.6%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 26256, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000020s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 35% nets.
+PHY-1001 : Routed 40% nets.
+PHY-1001 : Routed 49% nets.
+PHY-1001 : Routed 62% nets.
+PHY-1001 : Routed 85% nets.
+PHY-1002 : len = 98840, over cnt = 24(0%), over = 24, worst = 1
+PHY-1001 : End Routed; 0.514848s wall, 0.843750s user + 0.062500s system = 0.906250s CPU (176.0%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 98864, over cnt = 6(0%), over = 6, worst = 1
+PHY-1001 : End DR Iter 1; 0.018476s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (169.1%)
+
+PHY-1001 : ===== DR Iter 2 =====
+PHY-1002 : len = 98912, over cnt = 2(0%), over = 2, worst = 1
+PHY-1001 : End DR Iter 2; 0.019471s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (80.2%)
+
+PHY-1001 : ===== DR Iter 3 =====
+PHY-1002 : len = 98976, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 98976
+PHY-1001 : End DR Iter 3; 0.015384s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (101.6%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : clock net clk_25m will be merged with clock u_pll_test/clk0_buf
+PHY-1001 : net ext_clk_25m_pad will be routed on clock mesh
+PHY-1001 : clock net rx_data_3_gclk_net will be merged with clock rx_data_3
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  6.825483s wall, 6.906250s user + 0.421875s system = 7.328125s CPU (107.4%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  7.104400s wall, 7.203125s user + 0.437500s system = 7.640625s CPU (107.5%)
+
+RUN-1004 : used memory is 317 MB, reserved memory is 281 MB, peak memory is 596 MB
+RUN-1002 : start command "report_area -io_info -file uart_phy.area"
+RUN-1001 : standard
+***Report Model: uart_top***
+
+IO Statistics
+#IO                     9
+  #input                5
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                  569   out of  19600    2.90%
+#reg                  645   out of  19600    3.29%
+#le                  1035
+  #lut only           390   out of   1035   37.68%
+  #reg only           466   out of   1035   45.02%
+  #lut&reg            179   out of   1035   17.29%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    9   out of    188    4.79%
+  #ireg                 0
+  #oreg                 4
+  #treg                 0
+#pll                    1   out of      4   25.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db uart_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit uart.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 4 threads.
+BIT-1002 : Init instances completely, inst num: 535
+BIT-1002 : Init pips with 4 threads.
+BIT-1002 : Init pips completely, net num: 1246, pip num: 8416
+BIT-1003 : Multithreading accelaration with 4 threads.
+BIT-1003 : Generate bitstream completely, there are 806 valid insts, and 22675 bits set as '1'.
+BIT-1004 : PLL setting string = 0001
+BIT-1004 : Generate bits file uart.bit.
+RUN-1003 : finish command "bitgen -bit uart.bit -version 0X00 -g ucode:00000000000000000000000000000000" in  3.219853s wall, 8.671875s user + 0.078125s system = 8.750000s CPU (271.8%)
+
+RUN-1004 : used memory is 314 MB, reserved memory is 275 MB, peak memory is 596 MB
+RUN-1002 : start command "download -bit uart.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit uart.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit uart.bit" in  1.903362s wall, 1.875000s user + 0.078125s system = 1.953125s CPU (102.6%)
+
+RUN-1004 : used memory is 455 MB, reserved memory is 418 MB, peak memory is 596 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  6.591692s wall, 0.156250s user + 0.171875s system = 0.328125s CPU (5.0%)
+
+RUN-1004 : used memory is 481 MB, reserved memory is 445 MB, peak memory is 596 MB
+RUN-1003 : finish command "download -bit uart.bit -mode jtag -spd 6 -sec 64 -cable 0" in  9.056591s wall, 2.171875s user + 0.312500s system = 2.484375s CPU (27.4%)
+
+RUN-1004 : used memory is 346 MB, reserved memory is 306 MB, peak memory is 596 MB
+GUI-1001 : Download success!

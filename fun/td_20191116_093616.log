@@ -1,0 +1,109 @@
+============================================================
+   Tang Dynasty, V4.6.14314
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.6.2/bin/td.exe
+   Built at =   11:20:06 Sep 19 2019
+   Run by =     ¿µ×Ó½¡
+   Run Date =   Sat Nov 16 09:36:16 2019
+
+   Run on =     DESKTOP-02647D1
+============================================================
+RUN-001 : GUI based run...
+============================================================
+   Tang Dynasty, V4.6.14314
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.6.2/bin/td.exe
+   Built at =   11:20:06 Sep 19 2019
+   Run by =     ¿µ×Ó½¡
+   Run Date =   Sat Nov 16 09:36:16 2019
+
+   Run on =     DESKTOP-02647D1
+============================================================
+RUN-1002 : start command "open_project uart.al"
+GUI-8003 ERROR: source/my_uart_rx.v is missing!
+GUI-8003 ERROR: source/my_uart_tx.v is missing!
+GUI-8003 ERROR: source/speed_setting.v is missing!
+GUI-8003 ERROR: source/uart_top.v is missing!
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(41)
+HDL-8007 ERROR: syntax error near ')' in source/rtl/my_uart_rx.v(131)
+HDL-5007 WARNING: empty statement in sequential block in source/rtl/my_uart_rx.v(137)
+HDL-8007 ERROR: ignore module module due to previous errors in source/rtl/my_uart_rx.v(143)
+HDL-1007 : Verilog file 'source/rtl/my_uart_rx.v' ignored due to errors
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+GUI-8384 ERROR: Analyze file(s) failed ...
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+GUI-8003 ERROR: source/my_uart_rx.v is missing!
+GUI-8003 ERROR: source/my_uart_tx.v is missing!
+GUI-8003 ERROR: source/speed_setting.v is missing!
+GUI-8003 ERROR: source/uart_top.v is missing!
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(41)
+HDL-8007 ERROR: syntax error near ')' in source/rtl/my_uart_rx.v(131)
+HDL-5007 WARNING: empty statement in sequential block in source/rtl/my_uart_rx.v(137)
+HDL-8007 ERROR: ignore module module due to previous errors in source/rtl/my_uart_rx.v(143)
+HDL-1007 : Verilog file 'source/rtl/my_uart_rx.v' ignored due to errors
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+============================================================
+   Tang Dynasty, V4.6.14314
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.6.2/bin/td.exe
+   Built at =   11:20:06 Sep 19 2019
+   Run by =     ¿µ×Ó½¡
+   Run Date =   Sat Nov 16 09:38:45 2019
+
+   Run on =     DESKTOP-02647D1
+============================================================
+RUN-1002 : start command "open_project uart.al"
+GUI-8003 ERROR: source/my_uart_rx.v is missing!
+GUI-8003 ERROR: source/my_uart_tx.v is missing!
+GUI-8003 ERROR: source/speed_setting.v is missing!
+GUI-8003 ERROR: source/uart_top.v is missing!
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(41)
+HDL-8007 ERROR: syntax error near ')' in source/rtl/my_uart_rx.v(131)
+HDL-5007 WARNING: empty statement in sequential block in source/rtl/my_uart_rx.v(137)
+HDL-8007 ERROR: ignore module module due to previous errors in source/rtl/my_uart_rx.v(143)
+HDL-1007 : Verilog file 'source/rtl/my_uart_rx.v' ignored due to errors
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+GUI-8384 ERROR: Analyze file(s) failed ...
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+GUI-6001 WARNING: File source/my_uart_rx.v does not exist!
+GUI-6001 WARNING: File source/my_uart_rx.v does not exist!
+GUI-6001 WARNING: File source/my_uart_tx.v does not exist!
+GUI-6001 WARNING: File source/my_uart_tx.v does not exist!
+GUI-6001 WARNING: File source/my_uart_rx.v does not exist!
+GUI-6001 WARNING: File source/my_uart_tx.v does not exist!
+GUI-6001 WARNING: File source/speed_setting.v does not exist!

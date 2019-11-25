@@ -1,0 +1,16 @@
+set_pin_assignment {ext_clk_25m}    { LOCATION = K14;  }
+set_pin_assignment {ext_rst_n}  { LOCATION = L12;  }     ##KEY_R
+
+set_pin_assignment {ext_rst}  { LOCATION = H14;  }     ##KEY_L
+##set_pin_assignment {uart_tx} { LOCATION = C11; }         ##外接串口模块时，除了收发两根线外，至少一根地线连接
+set_pin_assignment {uart_rx} { LOCATION = B15; }    ##1
+set_pin_assignment {uart_rx_2} { LOCATION = C8; }    ##2
+set_pin_assignment {uart_tx} { LOCATION = E16; }       ##使用板卡上USB2UART模块时，收发引脚映射到F16 E16
+##set_pin_assignment {uart_rx} { LOCATION = F16; }
+
+set_pin_assignment {led_b} { LOCATION = N16; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {led_g} { LOCATION = P16; IOSTANDARD = LVCMOS33;  }
+set_pin_assignment {led_r} { LOCATION = P15; IOSTANDARD = LVCMOS33;  }
+ 
+
+

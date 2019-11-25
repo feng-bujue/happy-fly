@@ -1,0 +1,68 @@
+============================================================
+   Tang Dynasty, V4.6.14314
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.6.2/bin/td.exe
+   Built at =   11:20:06 Sep 19 2019
+   Run by =     ¿µ×Ó½¡
+   Run Date =   Sat Nov 16 20:31:48 2019
+
+   Run on =     DESKTOP-02647D1
+============================================================
+RUN-001 : GUI based run...
+============================================================
+   Tang Dynasty, V4.6.14314
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.6.2/bin/td.exe
+   Built at =   11:20:06 Sep 19 2019
+   Run by =     ¿µ×Ó½¡
+   Run Date =   Sat Nov 16 20:31:48 2019
+
+   Run on =     DESKTOP-02647D1
+============================================================
+RUN-1002 : start command "open_project uart.al"
+GUI-8003 ERROR: source/my_uart_rx.v is missing!
+GUI-8003 ERROR: source/my_uart_tx.v is missing!
+GUI-8003 ERROR: source/speed_setting.v is missing!
+GUI-8003 ERROR: source/uart_top.v is missing!
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(44)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+GUI-8003 ERROR: source/my_uart_rx.v is missing!
+GUI-8003 ERROR: source/my_uart_tx.v is missing!
+GUI-8003 ERROR: source/speed_setting.v is missing!
+GUI-8003 ERROR: source/uart_top.v is missing!
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(44)
+HDL-1007 : analyze verilog file al_ip/pll_test.v
+HDL-1007 : analyze verilog file source/rtl/my_uart_rx.v
+HDL-5007 WARNING: redeclaration of ansi port 'rx_int' is not allowed in source/rtl/my_uart_rx.v(44)
+HDL-1007 : analyze verilog file source/rtl/my_uart_tx.v
+HDL-1007 : analyze verilog file source/rtl/speed_setting.v
+HDL-1007 : analyze verilog file source/rtl/uart_top.v
+RUN-1002 : start command "elaborate -top uart_top"
+HDL-1007 : elaborate module uart_top in source/rtl/uart_top.v(15)
+HDL-1007 : elaborate module pll_test in al_ip/pll_test.v(24)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/TD4.6.2/arch/eagle_macro.v(81)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="25.000",CLKC0_DIV=40,CLKC1_DIV=20,CLKC2_DIV=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=39,CLKC1_CPHASE=19,CLKC2_CPHASE=9,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,SYNC_ENABLE="DISABLE") in D:/TD4.6.2/arch/eagle_macro.v(986)
+HDL-1007 : elaborate module speed_setting in source/rtl/speed_setting.v(1)
+HDL-1007 : elaborate module my_uart_rx in source/rtl/my_uart_rx.v(1)
+HDL-8007 ERROR: illegal operation with real number in source/rtl/my_uart_rx.v(153)
+HDL-1007 : module 'my_uart_rx' remains a black box, due to errors in its contents in source/rtl/my_uart_rx.v(1)
+HDL-1007 : elaborate module my_uart_tx in source/rtl/my_uart_tx.v(1)
+HDL-8007 ERROR: my_uart_rx is a black box in source/rtl/my_uart_rx.v(1)
